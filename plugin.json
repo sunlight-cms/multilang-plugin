@@ -1,0 +1,55 @@
+{
+    "$schema": "../../../system/schema/extend.json",
+    "name": "Multilang",
+    "description": "Helps with creation of multilingual websites",
+    "authors": [
+        {"url": "https://sunlight-cms.cz/"}
+    ],
+    "version": "1.0.0",
+    "environment": {
+        "system": "^8.3.1",
+        "db_engine": null
+    },
+    "actions": {
+        "config": "ConfigAction"
+    },
+    "config_defaults": {
+        "redirect_index": true,
+        "last_lang_cookie": "last_lang",
+        "use_root_heading": true,
+        "use_root_description": true,
+        "filter_search_by_lang": true,
+        "admin_page_lister_default_page": true,
+        "admin_page_lister_switcher": true
+    },
+    "langs": {
+        "multilang": "lang"
+    },
+    "class": "MultilangPlugin",
+    "events": [
+        {"event": "settings.init", "script": "event/settings.init.php", "priority": 10000},
+        {"event": "page.plugin.reg", "script": "event/page.plugin.reg.php"},
+        {"event": "page.plugin.multilang.delete.do", "script": "event/page.plugin.multilang.delete.do.php"},
+        {"event": "router.generate", "script": "event/router.generate.php", "priority": 10000}
+    ],
+    "events.web": [
+        {"event": "core.ready", "script": "event/web/core.ready.php", "priority": 10000},
+        {"event": "index.init", "script": "event/web/index.init.php", "priority": 10000},
+        {"event": "page.init", "script": "event/web/page.init.php", "priority": 10000},
+        {"event": "page.plugin.multilang", "script": "event/web/page.plugin.multilang.php"},
+        {"event": "search.fulltext", "script": "event/web/search.fulltext.php"}
+    ],
+    "events.admin": [
+        {"event": "admin.page.plugin.multilang.edit", "script": "event/admin/admin.page.plugin.multilang.edit.php"},
+        {"event": "admin.page.list.item", "script": "event/admin/admin.page.list.item.php"},
+        {"event": "admin.mod.content.before", "script": "event/admin/admin.mod.content.before.php"},
+        {"event": "admin.mod.content-setindex.before", "script": "event/admin/admin.mod.content-setindex.before.php"},
+        {"event": "admin.content.pagelist.before", "script": "event/admin/admin.content.pagelist.before.php"},
+        {"event": "admin.style", "script": "event/admin/admin.style.php"}
+    ],
+    "hcm": {
+        "multilang_menu": {"script": "hcm/multilang_menu.php"},
+        "multilang_page_menu": {"script": "hcm/multilang_page_menu.php"},
+        "multilang_root_url": {"script": "hcm/multilang_root_url.php"}
+    }
+}

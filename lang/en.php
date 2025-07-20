@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'page_label' => 'localisation',
+    'available_langs' => 'Available localisations',
+    'invalid_root' => 'This localisation root is invalid',
+    'setindex_note' => 'The Multilang plugin automatically redirects to a localisation\'s first subpage.',
+    'err.invalid_lang_code' => 'Invalid language code',
+    'err.lang_unavailable' => 'There is no matching language plugin for this language',
+    'err.root_used_as_subpage' => 'This localisation root is used as a subpage and is not functional',
+    'config.redirect_index' => 'Redirect from index',
+    'config.redirect_index.help' => 'When enabled, requests to the website\'s index page will be redirected to an appropriate localised index based on Accept-Language or the last used language cookie.',
+    'config.use_root_heading' => 'Use localisation heading',
+    'config.use_root_heading.help' => 'When enabled, use the heading of the current localisation root instead of the website title from system settings.',
+    'config.use_root_description' => 'Use localisation description',
+    'config.use_root_description.help' => 'When enabled, use the description of the current localisation root instead of the website description from system settings.',
+    'config.filter_search_by_lang' => 'Filter search results',
+    'config.filter_search_by_lang.help' => 'When enabled, only content in the current language is searched.',
+    'config.last_lang_cookie' => 'Last used language cookie',
+    'config.last_lang_cookie.help' => 'Store the last used language in a cookie with this name. Disabled if blank.',
+    'config.admin_page_lister_default_page' => 'Admin - set default page',
+    'config.admin_page_lister_default_page.help' => 'Set the default page in "Administration - Content management" based on the user\'s language.',
+    'config.admin_page_lister_switcher' => 'Admin - show language switcher',
+    'config.admin_page_lister_switcher.help' => 'Enable the quick language switcher in "Administration - Content management".',
+];

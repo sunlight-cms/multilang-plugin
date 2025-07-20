@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'page_label' => 'lokalizace',
+    'available_langs' => 'Dostupné lokalizace',
+    'invalid_root' => 'Tento kořen lokalizace není validní',
+    'setindex_note' => 'Multilang plugin automaticky přesměrovává z hlavní stránky na první podstránku dané lokalizace.',
+    'err.invalid_lang_code' => 'Neplatný kód jazyka',
+    'err.lang_unavailable' => 'Pro tento jazyk není dostupný odpovídající jazykový plugin',
+    'err.root_used_as_subpage' => 'Tento kořen lokalizace je použit jako podstránka a není tedy funkční.',
+    'config.redirect_index' => 'Přesměrovat z hlavní strany',
+    'config.redirect_index.help' => 'Pokud je tato volba aktivní, požadavky na hlavní stranu webu budou přesměrovány na lokalizovanou hlavní stranu dle Accept-Language nebo cookie s posledním použitým jazykem.',
+    'config.use_root_heading' => 'Použít nadpis lokalizace',
+    'config.use_root_heading.help' => 'Pokud je tato volba aktivní, použije se nadpis uvedený v příslušném kořenu lokalizace namísto titulku stránek z nastavení systému.',
+    'config.use_root_description' => 'Použít popis lokalizace',
+    'config.use_root_description.help' => 'Pokud je tato volba aktivní a stránka nemá vlastní popis, použije se popis uvedený v příslušném kořenu lokalizace namísto popisu stránek z nastavení systému.',
+    'config.filter_search_by_lang' => 'Filtrovat vyhledávání',
+    'config.filter_search_by_lang.help' => 'Pokud je tato volba aktivní, je prohledáván pouze obsah v aktuálním jazyce.',
+    'config.last_lang_cookie' => 'Cookie s posledním jazykem',
+    'config.last_lang_cookie.help' => 'Ukládat naposeldy použitý jazyk do cookie s tímto názvem. Vypnuto, pokud je název prázdný.',
+    'config.admin_page_lister_default_page' => 'Admin - nastavovat výchozí stránku',
+    'config.admin_page_lister_default_page.help' => 'Nastavit výchozí stránku v "Administrace - Správa obsahu" podle jazyka uživatele.',
+    'config.admin_page_lister_switcher' => 'Admin - zobrazit přepínač jazyků',
+    'config.admin_page_lister_switcher.help' => 'Zobrazit rychlý přepínač jazyků v "Administrace - Správa obsahu".',
+];
