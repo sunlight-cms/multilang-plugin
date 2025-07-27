@@ -89,7 +89,7 @@ Creates a page menu starting from the current localisation page.
 
 - **ord_start** - list pages starting at this order number (can be ``null``)
 - **ord_end** - list pages ending at this order number (can be ``null``)
-- **max_depth** - maximum nested page levels to display (defaults to 1, can  be ``null``)
+- **max_depth** - maximum nested page levels to display (defaults to 1, can be ``null``)
 - **class** - custom class name
 
 Usage in ``template.php``:
