@@ -138,11 +138,10 @@ class LanguageRoot
      */
     public function getIndex(): ?array
     {
-        static $cache = null;
-        static $loaded = false;
+        static $cache = [];
 
-        if ($loaded) {
-            return $cache;
+        if (isset($cache[$this->id])) {
+            return $cache[$this->id];
         }
 
         $index = DB::queryRow(
@@ -159,7 +158,7 @@ class LanguageRoot
             $index = null;
         }
 
-        return $cache = $index;
+        return $cache[$this->id] = $index;
     }
 
     /**
